@@ -1,0 +1,122 @@
+:root {
+    --color-primario: #2563eb;
+    --color-secundario: #6b7280;
+    --color-peligro: #dc2626;
+    --color-fondo: #f3f4f6;
+    --color-texto: #111827;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn-primario {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.btn-secundario {
+    background-color: var(--color-secundario);
+    color: white;
+}
+
+.btn-peligro {
+    background-color: var(--color-peligro);
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input,
+select {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid var(--color-primario);
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 400px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.badge-alta,
+.badge-media,
+.badge-baja {
+    padding: 5px 12px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.badge-alta {
+    background-color: #dc3545;
+}
+
+.badge-media {
+    background-color: #ffc107;
+    color: black;
+}
+
+.badge-baja {
+    background-color: #28a745;
+}
+button:focus {
+    outline: 3px solid #000;
+}
+@media (max-width: 768px) {
+
+    button,
+    input,
+    select,
+    .card {
+        width: 100%;
+    }
+
+    body {
+        padding: 15px;
+    }
+
+}
